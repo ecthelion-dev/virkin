@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="about_block">
+                    <nav class="menu">
+                        <a href="#" class="burger_menu">
+                            <img src="img/burger.svg" alt="">
+                        </a>
+
+                        <div class="burger_dropdown">
+                            <ul>
+                                <li><a href="#">НОВИНКИ</a></li>
+                                <li><a href="#">НИЖНЕЕ БЕЛЬЕ</a></li>
+                                <li><a href="#">Комлекты</a></li>
+                                <li><a href="#">Бюстгальтеры</a></li>
+                                <li><a href="#">Трусы</a></li>
+                                <li><a href="#">БОДИ</a></li>
+                            </ul>
+                        </div>
+
+                        <ul>
+                            <li><a href="#">НОВИНКИ</a></li>
+                            <li><a href="#">НИЖНЕЕ БЕЛЬЕ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu_mob" style="display: none;">
+                        <div class="hamburger-menu">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                                <span></span>
+                            </label>
+                            <div class="menu__overlay"></div>
+                            <div class="menu__box">
+                                <div class="header_menu"></div>
+                                <ul class="menu_nav">
+                                    <li><a href="#">НОВИНКИ</a></li>
+                                    <li><a href="#">НИЖНЕЕ БЕЛЬЕ</a></li>
+                                    <li><a href="#">БОДИ</a></li>
+                                    <li><a href="#">БРА</a></li>
+                                    <li><a href="#">ТРУСИКИ</a></li>
+                                </ul>
+                                <div class="contacts">
+                                    <div class="menu_contacts">
+                                        <a href="mailto:Virkin@gmail.com">Virkin@gmail.com</a>
+                                        <a href="tel:+79168388068">+ 7 (916) 838-80-68</a>
+                                    </div>
+                                    <div class="networks">
+                                        <a href="#"><img src="img/network.svg" alt=""></a>
+                                        <a href="#"><img src="img/network1.svg" alt=""></a>
+                                        <a href="#"><img src="img/network2.svg" alt=""></a>
+                                        <a href="#"><img src="img/network3.svg" alt=""></a>
+                                        <a href="#"><img src="img/network4.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <a href="#" class="register">
+                                    <img src="img/profile.svg" alt="">
+                                    Авторизоваться
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="search"><img src="img/search.svg" alt=""></a>
+                    </div>
+                    <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+                    <div class="right_profile_group">
+                        <a href="#" class="search"><img src="img/search.svg" alt=""></a>
+                        <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                        <a href="#" class="basket open_modal_basket">
+                            <img src="img/basket.svg" alt="">
+                            <span>2</span>
+                        </a>
+                        <a href="#" class="profile"><img src="img/profile.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="product_care__block">
+                <div class="container">
+                    <div class="about_block">
+                        <nav class="breadcrumbs">
+                            <a href="#">Главная</a>
+                            <span class="arrow">/</span>
+                            <span class="active">Уход за изделиями</span>
+                        </nav>
+                        <h2 class="title_block">Уход за изделиями</h2>
+                        <h3 class="title_block_mini">Бельё VIRKIN выполнено из деликатных материалов и требует бережного
+                            ухода.</h3>
+                        <h3 class="title_block_mini second_title">Правильный уход помогает сохранить форму, цвет и
+                            посадку изделия.</h3>
+                        <div class="care_instructions">
+                            <h4>Рекомендации по уходу</h4>
+                            <ul>
+                                <li>ручная стирка или деликатный режим при температуре до 30°C</li>
+                                <li>использовать мягкие моющие средства</li>
+                                <li>не использовать отбеливатели</li>
+                                <li>не сушить в стиральной машине</li>
+                                <li>не отжимать на высоких оборотах</li>
+                                <li>сушить в расправленном виде</li>
+                                <li>допускается деликатная глажка при низкой температуре</li>
+                            </ul>
+                        </div>
+                        <div class="important">
+                            <h4>Важно !</h4>
+                            <p>Изделия из сетки, микромодала и эластичных тканей требуют особенно аккуратного обращения.
+                                <br>
+                                Рекомендуем избегать контакта с грубыми поверхностями и фурнитурой.
+                            </p>
+                        </div>
+                        <div class="have_questions_form">
+                            <h3>Остались вопросы? Поможем с выбором!</h3>
+                            <p>Предложение связаться для персональной консультации.</p>
+                            <div class="contacts_networks">
+                                <a href="#">Написать в Telegram <img src="img/networks.svg" alt=""></a>
+                                <a href="#">Связаться в Instagram <img src="img/networks.svg" alt=""></a>
+                            </div>
+                            <img src="img/bg_form.png" alt="" class="bg_form first_bg">
+                            <img src="img/bg_form1.png" alt="" class="bg_form second_bg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="top_menu_group">
+                    <nav class="menu">
+                        <h3>Каталог</h3>
+                        <ul>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="collections.html">Коллекции</a></li>
+                            <li><a href="#">Боди</a></li>
+                            <li><a href="#">Бюстгальтеры</a></li>
+                            <li><a href="#">Трусики</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu">
+                        <h3>О БРЕНДЕ</h3>
+                        <ul>
+                            <li><a href="about-brand.html">О бренде</a></li>
+                            <li><a href="#">Философия</a></li>
+                            <li><a href="#">Производство</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu">
+                        <h3>ПОКУПАТЕЛЯМ</h3>
+                        <ul>
+                            <li><a href="place-order.html">Как заказать</a></li>
+                            <li><a href="delivery.html">Доставка и оплата</a></li>
+                            <li><a href="#">Размерная сетка</a></li>
+                            <li><a href="care.html">Уход за изделиями</a></li>
+                            <li><a href="return.html">Возврат и обмен</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu">
+                        <h3>КОНТАКТЫ</h3>
+                        <div class="contacts">
+                            <a href="mailto:info@virkin.ru" class="email">info@virkin.ru</a>
+                            <a href="tel:+79168388068" class="tell">+ 7 (916) 838-80-68</a>
+                        </div>
+                        <div class="networks">
+                            <a href="#"><img src="img/network_app.svg" alt=""></a>
+                            <a href="#"><img src="img/network_app1.svg" alt=""></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="bottom_footer_group">
+                <div class="container">
+                    <div class="bottom_footer">
+                        <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+                        <div class="policy">
+                            <a href="files/Политика_конфиденциальности_интернет_2.pdf">Политика конфиденциальности</a>
+                            <a href="files/Публичная оферта Интернет VIRKIN (2).pdf">Публичная оферта</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal_overlay"></div>
+        <div class="modals">
+            <div class="modal_basket">
+                <div class="modal_sections">
+                    <div class="modal_header">
+                        <h3>Твоя корзина</h3>
+                        <img src="img/close_icon.svg" alt="" class="close">
+                    </div>
+                    <div class="products_modal_group">
+                        <div class="products_group">
+                            <div class="product">
+                                <img src="img/women.png" alt="" class="women_img">
+                                <div class="texts_product">
+                                    <div class="title_product">
+                                        <h4>Темно-синий бюстгальтер с
+                                            плотной чашкой Molly</h4>
+                                        <a href="#"><img src="img/delete.svg" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Размер: L</p>
+                                        <p>Цвет: коричевный</p>
+                                        <p>0123667785532</p>
+                                    </div>
+                                    <div class="cost_counter">
+                                        <div class="quantity">
+                                            <button type="button" class="quantity__btn quantity__minus">−</button>
+
+                                            <input type="number" class="quantity__input" value="1" min="1" readonly>
+
+                                            <button type="button" class="quantity__btn quantity__plus">+</button>
+                                        </div>
+                                        <span class="cost">14 000 р.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="img/women1.png" alt="" class="women_img">
+                                <div class="texts_product">
+                                    <div class="title_product">
+                                        <h4>Темно-синий бюстгальтер с
+                                            плотной чашкой Molly</h4>
+                                        <a href="#"><img src="img/delete.svg" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Размер: L</p>
+                                        <p>Цвет: коричевный</p>
+                                        <p>0123667785532</p>
+                                    </div>
+                                    <div class="cost_counter">
+                                        <div class="quantity">
+                                            <button type="button" class="quantity__btn quantity__minus">−</button>
+
+                                            <input type="number" class="quantity__input" value="1" min="1" readonly>
+
+                                            <button type="button" class="quantity__btn quantity__plus">+</button>
+                                        </div>
+                                        <span class="cost">14 000 р.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="img/women.png" alt="" class="women_img">
+                                <div class="texts_product">
+                                    <div class="title_product">
+                                        <h4>Темно-синий бюстгальтер с
+                                            плотной чашкой Molly</h4>
+                                        <a href="#"><img src="img/delete.svg" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Размер: L</p>
+                                        <p>Цвет: коричевный</p>
+                                        <p>0123667785532</p>
+                                    </div>
+                                    <div class="cost_counter">
+                                        <div class="quantity">
+                                            <button type="button" class="quantity__btn quantity__minus">−</button>
+
+                                            <input type="number" class="quantity__input" value="1" min="1" readonly>
+
+                                            <button type="button" class="quantity__btn quantity__plus">+</button>
+                                        </div>
+                                        <span class="cost">14 000 р.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="img/women1.png" alt="" class="women_img">
+                                <div class="texts_product">
+                                    <div class="title_product">
+                                        <h4>Темно-синий бюстгальтер с
+                                            плотной чашкой Molly</h4>
+                                        <a href="#"><img src="img/delete.svg" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Размер: L</p>
+                                        <p>Цвет: коричевный</p>
+                                        <p>0123667785532</p>
+                                    </div>
+                                    <div class="cost_counter">
+                                        <div class="quantity">
+                                            <button type="button" class="quantity__btn quantity__minus">−</button>
+
+                                            <input type="number" class="quantity__input" value="1" min="1" readonly>
+
+                                            <button type="button" class="quantity__btn quantity__plus">+</button>
+                                        </div>
+                                        <span class="cost">14 000 р.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="img/women.png" alt="" class="women_img">
+                                <div class="texts_product">
+                                    <div class="title_product">
+                                        <h4>Темно-синий бюстгальтер с
+                                            плотной чашкой Molly</h4>
+                                        <a href="#"><img src="img/delete.svg" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Размер: L</p>
+                                        <p>Цвет: коричевный</p>
+                                        <p>0123667785532</p>
+                                    </div>
+                                    <div class="cost_counter">
+                                        <div class="quantity">
+                                            <button type="button" class="quantity__btn quantity__minus">−</button>
+
+                                            <input type="number" class="quantity__input" value="1" min="1" readonly>
+
+                                            <button type="button" class="quantity__btn quantity__plus">+</button>
+                                        </div>
+                                        <span class="cost">14 000 р.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="total">14 000 р.</h5>
+                        <div class="order_product">
+                            <a href="#" class="place_order">Оформить заказ</a>
+                            <a href="#" class="buy">Купить в один клик</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // burger menu desctop
+    const burger = document.querySelector(".burger_menu");
+    const dropdown = document.querySelector(".burger_dropdown");
+
+    burger.addEventListener("click", function (e) {
+        e.preventDefault();
+        dropdown.classList.toggle("active");
+    });
+
+    document.addEventListener("click", function (e) {
+        if (!e.target.closest(".menu")) {
+            dropdown.classList.remove("active");
+        }
+    });
+</script>
+
+<script>
+    const menuToggle = document.getElementById("menu__toggle");
+
+    menuToggle.addEventListener("change", function () {
+        if (this.checked) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</html>

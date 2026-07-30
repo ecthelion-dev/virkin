@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="about_block">
+                    <nav class="menu">
+                        <a href="#" class="burger_menu">
+                            <img src="img/burger.svg" alt="">
+                        </a>
+
+                        <div class="burger_dropdown">
+                            <ul>
+                                <li><a href="#">НОВИНКИ</a></li>
+                                <li><a href="#">НИЖНЕЕ БЕЛЬЕ</a></li>
+                                <li><a href="#">Комлекты</a></li>
+                                <li><a href="#">Бюстгальтеры</a></li>
+                                <li><a href="#">Трусы</a></li>
+                                <li><a href="#">БОДИ</a></li>
+                            </ul>
+                        </div>
+
+                        <ul>
+                            <li><a href="#">НОВИНКИ</a></li>
+                            <li><a href="#">НИЖНЕЕ БЕЛЬЕ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu_mob" style="display: none;">
+                        <div class="hamburger-menu">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                                <span></span>
+                            </label>
+                            <div class="menu__overlay"></div>
+                            <div class="menu__box">
+                                <div class="header_menu"></div>
+                                <ul class="menu_nav">
+                                    <li><a href="#">НОВИНКИ</a></li>
+                                    <li><a href="#">НИЖНЕЕ БЕЛЬЕ</a></li>
+                                    <li><a href="#">БОДИ</a></li>
+                                    <li><a href="#">БРА</a></li>
+                                    <li><a href="#">ТРУСИКИ</a></li>
+                                </ul>
+                                <div class="contacts">
+                                    <div class="menu_contacts">
+                                        <a href="mailto:Virkin@gmail.com">Virkin@gmail.com</a>
+                                        <a href="tel:+79168388068">+ 7 (916) 838-80-68</a>
+                                    </div>
+                                    <div class="networks">
+                                        <a href="#"><img src="img/network.svg" alt=""></a>
+                                        <a href="#"><img src="img/network1.svg" alt=""></a>
+                                        <a href="#"><img src="img/network2.svg" alt=""></a>
+                                        <a href="#"><img src="img/network3.svg" alt=""></a>
+                                        <a href="#"><img src="img/network4.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <a href="#" class="register">
+                                    <img src="img/profile.svg" alt="">
+                                    Авторизоваться
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="search"><img src="img/search.svg" alt=""></a>
+                    </div>
+                    <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+                    <div class="right_profile_group">
+                        <a href="#" class="search"><img src="img/search.svg" alt=""></a>
+                        <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                        <a href="#" class="basket open_modal_basket">
+                            <img src="img/basket.svg" alt="">
+                            <span>2</span>
+                        </a>
+                        <a href="#" class="profile"><img src="img/profile.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="catalog_block">
+                <div class="container">
+                    <div class="about_block">
+                        <nav class="breadcrumbs">
+                            <a href="#">Главная</a>
+                            <span class="arrow">/</span>
+                            <span class="active">Каталог</span>
+                        </nav>
+                        <h2 class="title_block">Каталог</h2>
+                        <div class="sorting">
+                            <img src="img/sorting.svg" alt="" class="sorting_icon">
+
+                            <div class="custom-select">
+                                <div class="select-head">
+                                    <span>Сортировка</span>
+                                    <img src="img/icon_select.svg" alt="">
+                                </div>
+
+                                <ul class="select-list">
+                                    <li>Избранные</li>
+                                    <li>Новинки</li>
+                                    <li>По популярности</li>
+                                    <li>По возрастанию цены</li>
+                                    <li>По убыванию цены</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter_products">
+                            <form action="" method="" class="filter">
+                                <h3>Фильтры</h3>
+                                <div class="price">
+                                    <h4>Цена</h4>
+                                    <div class="inputs_price_group">
+                                        <div class="input_price">
+                                            <label for="price">От</label>
+                                            <input type="number" id="price" placeholder="500">
+                                        </div>
+                                        <span>-</span>
+                                        <div class="input_price">
+                                            <label for="price">До</label>
+                                            <input type="number" id="price" placeholder="29 000">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <div class="titles_filter">
+                                                    Цвет
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <div class="checkboxes_filter">
+                                                    <label class="checkboxes">
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                        <div class="colors">
+                                                            <div class="color brown"></div>
+                                                            <p>Коричневый</p>
+                                                        </div>
+                                                    </label>
+                                                    <label class="checkboxes">
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                        <div class="colors">
+                                                            <div class="color black"></div>
+                                                            <p>Черный</p>
+                                                        </div>
+                                                    </label>
+                                                    <label class="checkboxes">
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                        <div class="colors">
+                                                            <div class="color olive"></div>
+                                                            <p>Оливковый</p>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="titles_filter">
+                                                    Размер
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <div class="checkboxes_filter">
+                                                    <label class="checkboxes">
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                        <div class="colors">
+                                                            <p>S-M, M-L</p>
+                                                        </div>
+                                                    </label>
+                                                    <label class="checkboxes">
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                        <div class="colors">
+                                                            <p>S</p>
+                                                        </div>
+                                                    </label>
+                                                    <label class="checkboxes">
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                        <div class="colors">
+                                                            <p>M</p>
+                                                        </div>
+                                                    </label>
+                                                    <label class="checkboxes">
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                        <div class="colors">
+                                                            <p>L</p>
+                                                        </div>
+                                                    </label>
+                                                    <div class="hidden">
+                                                        <!-- <label class="checkboxes">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+
+                                                            <div class="colors">
+                                                                <p>XL</p>
+                                                            </div>
+                                                        </label> -->
+                                                        <!-- <label class="checkboxes">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+
+                                                            <div class="colors">
+                                                                <p>XXL</p>
+                                                            </div>
+                                                        </label> -->
+                                                    </div>
+                                                    <button class="more" type="button">
+                                                        Еще <img src="img/icon_more.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="titles_filter">
+                                                    Тип продукта
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <div class="checkboxes_filter">
+                                                    <div class="checkboxes radio_input">
+                                                        <label>
+                                                            <input type="radio" name="product_type" value="new">
+                                                            <span class="radio"></span>
+
+                                                            <div class="colors">
+                                                                <p>Новинки</p>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkboxes radio_input">
+                                                        <label>
+                                                            <input type="radio" name="product_type" value="bralettes">
+                                                            <span class="radio"></span>
+
+                                                            <div class="colors">
+                                                                <p>Бралетты</p>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkboxes radio_input">
+                                                        <label>
+                                                            <input type="radio" name="product_type" value="panties">
+                                                            <span class="radio"></span>
+
+                                                            <div class="colors">
+                                                                <p>Трусы</p>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkboxes radio_input">
+                                                        <label>
+                                                            <input type="radio" name="product_type" value="body">
+                                                            <span class="radio"></span>
+
+                                                            <div class="colors">
+                                                                <p>Боди</p>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkboxes radio_input">
+                                                        <label>
+                                                            <input type="radio" name="product_type" value="sets">
+                                                            <span class="radio"></span>
+
+                                                            <div class="colors">
+                                                                <p>Комплекты</p>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="hidden">
+                                                        <div class="checkboxes radio_input">
+                                                            <label>
+                                                                <input type="radio" name="product_type"
+                                                                    value="swimwear1">
+                                                                <span class="radio"></span>
+
+                                                                <div class="colors">
+                                                                    <p>Купальники</p>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <button class="more" type="button">
+                                                        Еще <img src="img/icon_more.svg" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo1"
+                                                aria-expanded="false" aria-controls="collapseTwo1">
+                                                <div class="titles_filter">
+                                                    Коллекция
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo1" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <div class="checkboxes_filter">
+                                                    <label class="checkboxes">
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                        <div class="colors">
+                                                            <p>Savage Violette </p>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo2"
+                                                aria-expanded="false" aria-controls="collapseTwo2">
+                                                <div class="titles_filter">
+                                                    Наличие
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo2" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <div class="checkboxes_filter">
+                                                    <label class="checkboxes">
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+
+                                                        <div class="colors">
+                                                            <p>В наличии</p>
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="apply">Применить фильтры</button>
+                                <a href="#" class="clear_filter">Сбросить фильтры</a>
+                            </form>
+                            <div class="products_group_filter__right">
+                                <div class="products_group_filter">
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3>Трусы бразилиано <br>
+                                                Graphite Treillis</h3>
+                                            <span>4 200 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img1.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3>Трусы стринги <br>
+                                                Graphite Treillis</h3>
+                                            <span>4 400 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img2.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3>Трусы стринги Noir Graphique</h3>
+                                            <span>4 200 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img3.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3>Трусы бразилиано <br>
+                                                Noir Graphique</h3>
+                                            <span>4 000 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img22.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3>Трусы бразилиано <br>
+                                                Chocolate Graphique</h3>
+                                            <span>4 000 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img23.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3>Трусы стринги <br>
+                                                Chocolate Graphique</h3>
+                                            <span>4 200 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img21.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3>Бралетт Chocolate <br> Graphique</h3>
+                                            <span>6 500 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img6.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3>Бралетт Noir Graphite </h3>
+                                            <span>6 500 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img20.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3>Бралетт Graphite Treillis</h3>
+                                            <span>6 700 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img4.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S-M</span>
+                                                    <span>M-L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3>Боди Olive Icon</h3>
+                                            <span>9 900 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img19.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3>Боди Veil</h3>
+                                            <span>8 500 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img24.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3 style="display: flex; flex-direction: column; gap: 5px;">Комлект Noir
+                                                Graphique
+                                                <span>Бралетт
+                                                    и бразилиано</span>
+                                            </h3>
+                                            <span>10 500 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img8.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3 style="display: flex; flex-direction: column; gap: 5px;">Комлект Noir
+                                                Graphique
+                                                <span>Бралетт и стринги</span>
+                                            </h3>
+                                            <span>10 700 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img25.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3 style="display: flex; flex-direction: column; gap: 5px;">Комлект
+                                                Graphite Treillis
+                                                <span>Бралетт и стринги</span>
+                                            </h3>
+                                            <span>11 100 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img26.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3 style="display: flex; flex-direction: column; gap: 5px;">Комлект
+                                                Graphite Treillis
+                                                <span>Бралетт и бразилиано</span>
+                                            </h3>
+                                            <span>10 900 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img27.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3 style="display: flex; flex-direction: column; gap: 5px;">Комлект
+                                                Chocolate Graphique
+                                                <span>Бралетт и стринги</span>
+                                            </h3>
+                                            <span>10 700 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="card_product">
+                                        <div class="img_wrapper">
+                                            <img src="img/product_img28.png" alt="" class="product_img">
+                                            <span class="new">Новинка</span>
+                                            <a href="#" class="like"><img src="img/like.svg" alt=""></a>
+                                            <div class="add_basket">
+                                                <a href="#" class="to_basket">
+                                                    добавить в корзину
+                                                    <img src="img/basket.svg" alt="">
+                                                </a>
+                                                <div class="size">
+                                                    <span>S</span>
+                                                    <span>M</span>
+                                                    <span>L</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text_card_desc">
+                                            <h3 style="display: flex; flex-direction: column; gap: 5px;">Комлект
+                                                Chocolate Graphique
+                                                <span>Бралетт и бразилиано</span>
+                                            </h3>
+                                            <span>10 500 <img src="img/rubl.svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="load_more">Загрузить еще</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="top_menu_group">
+                    <nav class="menu">
+                        <h3>Каталог</h3>
+                        <ul>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="collections.html">Коллекции</a></li>
+                            <li><a href="#">Боди</a></li>
+                            <li><a href="#">Бюстгальтеры</a></li>
+                            <li><a href="#">Трусики</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu">
+                        <h3>О БРЕНДЕ</h3>
+                        <ul>
+                            <li><a href="about-brand.html">О бренде</a></li>
+                            <li><a href="#">Философия</a></li>
+                            <li><a href="#">Производство</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu">
+                        <h3>ПОКУПАТЕЛЯМ</h3>
+                        <ul>
+                            <li><a href="place-order.html">Как заказать</a></li>
+                            <li><a href="delivery.html">Доставка и оплата</a></li>
+                            <li><a href="#">Размерная сетка</a></li>
+                            <li><a href="care.html">Уход за изделиями</a></li>
+                            <li><a href="return.html">Возврат и обмен</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu">
+                        <h3>КОНТАКТЫ</h3>
+                        <div class="contacts">
+                            <a href="mailto:info@virkin.ru" class="email">info@virkin.ru</a>
+                            <a href="tel:+79168388068" class="tell">+ 7 (916) 838-80-68</a>
+                        </div>
+                        <div class="networks">
+                            <a href="#"><img src="img/network_app.svg" alt=""></a>
+                            <a href="#"><img src="img/network_app1.svg" alt=""></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="bottom_footer_group">
+                <div class="container">
+                    <div class="bottom_footer">
+                        <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+                        <div class="policy">
+                            <a href="files/Политика_конфиденциальности_интернет_2.pdf">Политика конфиденциальности</a>
+                            <a href="files/Публичная оферта Интернет VIRKIN (2).pdf">Публичная оферта</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="modal_overlay"></div>
+        <div class="modals">
+            <div class="modal_basket">
+                <div class="modal_sections">
+                    <div class="modal_header">
+                        <h3>Твоя корзина</h3>
+                        <img src="img/close_icon.svg" alt="" class="close">
+                    </div>
+                    <div class="products_modal_group">
+                        <div class="products_group">
+                            <div class="product">
+                                <img src="img/women.png" alt="" class="women_img">
+                                <div class="texts_product">
+                                    <div class="title_product">
+                                        <h4>Темно-синий бюстгальтер с
+                                            плотной чашкой Molly</h4>
+                                        <a href="#"><img src="img/delete.svg" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Размер: L</p>
+                                        <p>Цвет: коричевный</p>
+                                        <p>0123667785532</p>
+                                    </div>
+                                    <div class="cost_counter">
+                                        <div class="quantity">
+                                            <button type="button" class="quantity__btn quantity__minus">−</button>
+
+                                            <input type="number" class="quantity__input" value="1" min="1" readonly>
+
+                                            <button type="button" class="quantity__btn quantity__plus">+</button>
+                                        </div>
+                                        <span class="cost">14 000 р.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="img/women1.png" alt="" class="women_img">
+                                <div class="texts_product">
+                                    <div class="title_product">
+                                        <h4>Темно-синий бюстгальтер с
+                                            плотной чашкой Molly</h4>
+                                        <a href="#"><img src="img/delete.svg" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Размер: L</p>
+                                        <p>Цвет: коричевный</p>
+                                        <p>0123667785532</p>
+                                    </div>
+                                    <div class="cost_counter">
+                                        <div class="quantity">
+                                            <button type="button" class="quantity__btn quantity__minus">−</button>
+
+                                            <input type="number" class="quantity__input" value="1" min="1" readonly>
+
+                                            <button type="button" class="quantity__btn quantity__plus">+</button>
+                                        </div>
+                                        <span class="cost">14 000 р.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="img/women.png" alt="" class="women_img">
+                                <div class="texts_product">
+                                    <div class="title_product">
+                                        <h4>Темно-синий бюстгальтер с
+                                            плотной чашкой Molly</h4>
+                                        <a href="#"><img src="img/delete.svg" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Размер: L</p>
+                                        <p>Цвет: коричевный</p>
+                                        <p>0123667785532</p>
+                                    </div>
+                                    <div class="cost_counter">
+                                        <div class="quantity">
+                                            <button type="button" class="quantity__btn quantity__minus">−</button>
+
+                                            <input type="number" class="quantity__input" value="1" min="1" readonly>
+
+                                            <button type="button" class="quantity__btn quantity__plus">+</button>
+                                        </div>
+                                        <span class="cost">14 000 р.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="img/women1.png" alt="" class="women_img">
+                                <div class="texts_product">
+                                    <div class="title_product">
+                                        <h4>Темно-синий бюстгальтер с
+                                            плотной чашкой Molly</h4>
+                                        <a href="#"><img src="img/delete.svg" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Размер: L</p>
+                                        <p>Цвет: коричевный</p>
+                                        <p>0123667785532</p>
+                                    </div>
+                                    <div class="cost_counter">
+                                        <div class="quantity">
+                                            <button type="button" class="quantity__btn quantity__minus">−</button>
+
+                                            <input type="number" class="quantity__input" value="1" min="1" readonly>
+
+                                            <button type="button" class="quantity__btn quantity__plus">+</button>
+                                        </div>
+                                        <span class="cost">14 000 р.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product">
+                                <img src="img/women.png" alt="" class="women_img">
+                                <div class="texts_product">
+                                    <div class="title_product">
+                                        <h4>Темно-синий бюстгальтер с
+                                            плотной чашкой Molly</h4>
+                                        <a href="#"><img src="img/delete.svg" alt=""></a>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Размер: L</p>
+                                        <p>Цвет: коричевный</p>
+                                        <p>0123667785532</p>
+                                    </div>
+                                    <div class="cost_counter">
+                                        <div class="quantity">
+                                            <button type="button" class="quantity__btn quantity__minus">−</button>
+
+                                            <input type="number" class="quantity__input" value="1" min="1" readonly>
+
+                                            <button type="button" class="quantity__btn quantity__plus">+</button>
+                                        </div>
+                                        <span class="cost">14 000 р.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="total">14 000 р.</h5>
+                        <div class="order_product">
+                            <a href="#" class="place_order">Оформить заказ</a>
+                            <a href="#" class="buy">Купить в один клик</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    // sorting filter
+    const select = document.querySelector(".custom-select");
+    const head = select.querySelector(".select-head");
+    const text = head.querySelector("span");
+
+    head.addEventListener("click", () => {
+        select.classList.toggle("active");
+    });
+
+    select.querySelectorAll("li").forEach(item => {
+        item.addEventListener("click", () => {
+            text.textContent = item.textContent;
+            select.classList.remove("active");
+        });
+    });
+
+    document.addEventListener("click", e => {
+        if (!e.target.closest(".custom-select")) {
+            select.classList.remove("active");
+        }
+    });
+</script>
+
+<script>
+    // burger menu desctop
+    const burger = document.querySelector(".burger_menu");
+    const dropdown = document.querySelector(".burger_dropdown");
+
+    burger.addEventListener("click", function (e) {
+        e.preventDefault();
+        dropdown.classList.toggle("active");
+    });
+
+    document.addEventListener("click", function (e) {
+        if (!e.target.closest(".menu")) {
+            dropdown.classList.remove("active");
+        }
+    });
+</script>
+
+<script>
+    const menuToggle = document.getElementById("menu__toggle");
+
+    menuToggle.addEventListener("change", function () {
+        if (this.checked) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</html>
